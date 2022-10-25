@@ -12,17 +12,9 @@ namespace semanaDos1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Regristro : ContentPage
     {
-        private int v;
-
-        public Regristro(string usuario)
+        public Regristro()
         {
             InitializeComponent();
-            lblUsuario.Text ="el usuario conectado es "+ usuario;
-        }
-
-        public Regristro(string usuario, int v) : this(usuario)
-        {
-            this.v = v;
         }
 
         private void btnInfo_Clicked(object sender, EventArgs e)

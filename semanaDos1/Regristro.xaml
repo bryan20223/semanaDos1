@@ -4,9 +4,7 @@
              x:Class="semanaDos1.Regristro">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="lblUsuario" Text="" HorizontalTextAlignment="End" FontSize="16"/>
-
-            <Label Text=" Registro de Notas"
+            <Label Text="venta de regrsitro"
                 HorizontalOptions="CenterAndExpand" />
 
             <Entry x:Name="txtNombre"  Placeholder="Ingrese Nombrte"/>
