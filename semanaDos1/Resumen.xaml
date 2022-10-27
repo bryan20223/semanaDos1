@@ -1,22 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="semanaDos1.Regristro">
+             x:Class="semanaDos1.Resumen">
     <ContentPage.Content>
         <StackLayout>
+           
+
+
             <Label x:Name="lblUsuario" Text="" HorizontalTextAlignment="End" FontSize="16"/>
-            <Label Text="Registro  "
+            <Label Text="Resumen "
                 HorizontalOptions="CenterAndExpand" />
 
-            <Entry x:Name="txtNombre"  Placeholder="Ingrese Nombrte"/>
-            <Entry x:Name="txtApellido"  Placeholder="Ingrese el apellido"/>
-            <Entry x:Name="txtmontoInicial" Placeholder="Monto Inicial" Keyboard="Numeric"/>
+            <Entry x:Name="txtNombre" />
+            <Label x:Name="lblApellido" Text="" HorizontalTextAlignment="End" FontSize="16"/>
+            <Entry x:Name="txtApellido" />
+          
+
+            <Entry x:Name="txtPagar" Placeholder="PAGAR" Keyboard="Numeric"/>
             <!--Entry x:Name="txtpagoMensual" Placeholder="Pago Mensual " Keyboard="Numeric"/-->
-            <Label Text="Cuota"/>
-            <Entry x:Name="txtcuota"  Keyboard="Numeric"/>
-            <Entry x:Name="Resultado"/>
-            <Button x:Name="btnInfo" Text="Mostrar Informacion" Clicked="btnInfo_Clicked"/>
+            <Label Text="Total a Pagar"/>
             
+            <Entry x:Name="Resultado"/>
+            
+
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -5,31 +5,38 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout VerticalOptions="Center">
-            <Label Text="Sistema de Regristro de notas !"
+            <Label Text="Sistema de Regristro !"
                 HorizontalOptions="CenterAndExpand" />
-           
-            
-            <Image Source="download"/>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
 
-                <Label Text="USUARIO" Grid.Row="0" Grid.Column="0" FontSize="16" HorizontalOptions="Center"/>
 
-                <Entry x:Name="txtUser" Placeholder="Por favor ingresar su Usuario" Grid.Row="0" Grid.Column="1"/>
-                <Label Text="Contraseña" Grid.Row="1" Grid.Column="0"/>
-                <Entry x:Name="txtContraseña" Placeholder="Ingrese Contraseña" IsPassword="True" Grid.Row="1" Grid.Column="1">
-                </Entry>
+                <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png "/>
+                <Button x:Name="btnInicio" Text="Iniciar" Clicked="btnInicio_Clicked" FontSize="16" HorizontalOptions="Center"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                       
+                    </Grid.ColumnDefinitions>
+                    
+                    <Label Text="USUARIO" Grid.Row="0" Grid.Column="0" FontSize="16" HorizontalOptions="Center"/>
+
+                    <Entry x:Name="txtUser" Placeholder="Por favor ingresar su Usuario" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="Contraseña" Grid.Row="1" Grid.Column="0"/>
+                    <Entry x:Name="txtContraseña" Placeholder="Ingrese Contraseña" IsPassword="True" Grid.Row="1" Grid.Column="1">
+                        
+                    </Entry>
+                    
+                   
+                        
                 </Grid>
-            
-            <Button x:Name="btnInicio" Text="Iniciar" Clicked="btnInicio_Clicked"/>
-        </StackLayout>
+                
+
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

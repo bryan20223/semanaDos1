@@ -17,24 +17,25 @@ namespace semanaDos1
             InitializeComponent();
         }
 
-        private void btnInicio_Clicked(object sender, EventArgs e)
+        private async void btnInicio_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Regristro());
+         await   Navigation.PushAsync(new Regristro(txtUser.Text,30));
 
-            string usuario = "Bryan";
-            string contrasena = "123456";
+            string usuario = "Bryan2022";
+            string contrasena = "uisrael2022";
             string tusuario = txtUser.Text;
             string tcontrasena = txtContraseña.Text;
 
             if (usuario == tusuario & contrasena == tcontrasena) 
             {
-                DisplayAlert("Alerta", "Usuario correcto", "Cerrar");
-                //Navigation.PushAsync(new Regristro());
+               await DisplayAlert("Alerta", "Usuario correcto", "Cerrar");
+                
                 
             }
             else
             {
-                DisplayAlert("Alerta", "Usuario no existe", "Cerrar");
+               await DisplayAlert("Alerta", "Usuario no existe", "Cerrar");
+                
 
             }
 
